@@ -1,0 +1,258 @@
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import win kivy.core.window
+<Button>
+    opacity: 1 if self.state == 'normal' else .2
+ScreenManagement:
+    #transition: FadeTransition()
+    #loading:
+    #ShowcaseScreen:
+    MainScreen:
+    a1:
+    a2:
+    a3:
+    a4:
+    a5:
+    a6:
+    a7:
+    a8:
+    b1:
+    b2:
+    b3:
+    b4:
+    b5:
+    b6:
+    b7:
+    b8:
+    c1:
+    c2:
+    c3:
+    c4:
+    c5:
+    c6:
+    c7:
+    c8:
+
+<MainScreen>:
+    name: "main"
+    #MyWidget
+    FloatLayout:
+        canvas:
+            Color:
+                rgb: 1, 1, 1
+            Rectangle:
+                source: 'img/emo.jpg'
+                size: self.size
+    BoxLayout:
+        Button:
+            text: 'Grupos de Musica'
+            size_hint: 0.5, 0.2
+            #height: '48dp'
+            on_release: app.root.current = "c1"
+            #border: 30,30,30,30
+            opacity: 1 if self.state == 'normal' else .5
+        Button:
+            text: 'Libros'
+            size_hint: 0.5, 0.2 
+            #height: '48dp'
+            on_release: app.root.current = "b1"
+            #border: 10,10,10,10
+            opacity: 1 if self.state == 'normal' else .5
+        Button:
+            text: 'Peliculas'
+            size_hint: 0.5, 0.2
+            #height: '48dp'
+            on_release: app.root.current = "a1"
+            #border: 30,30,30,30
+            opacity: 1 if self.state == 'normal' else .5
+<a1>:
+    name: "a1"
+    Button:
+        on_release: app.root.current = "a2"
+        Image:
+            source: "img/a.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<a2>:
+    name: "a2"
+    Button:
+        on_release: app.root.current = "a3"
+        text: "Titanic"
+        font_size: 50
+<a3>:
+    name: "a3"
+    Button:
+        on_release: app.root.current = "a4"
+        Image:
+            source: "img/a3.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<a4>:
+    name: "a4"
+    Button:
+        on_release: app.root.current = "a5"
+        text: "King Kong"
+        font_size: 50
+<a5>:
+    name: "a5"
+    Button:
+        on_release: app.root.current = "a6"
+        Image:
+            source: "img/a5.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<a6>:
+    name: "a6"
+    Button:
+        on_release: app.root.current = "a7"
+        text: "Batman"
+        font_size: 50
+<a7>:
+    name: "a7"
+    Button:
+        on_release: app.root.current = "a8"
+        Image:
+            source: "img/a7.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<a8>:
+    name: "a8"
+    Button:
+        on_release: app.root.current = "main"
+        text: "Madagascar"
+        font_size: 50
+<b1>:
+    name: "b1"
+    Button:
+        on_release: app.root.current = "b2"
+        Image:
+            source: "img/b.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<b2>:
+    name: "b2"
+    Button:
+        on_release: app.root.current = "b3"
+        text: "De la Tierra a la Luna. Julio Verne"
+        font_size: 40
+<b3>:
+    name: "b3"
+    Button:
+        on_release: app.root.current = "b4"
+        Image:
+            source: "img/b3.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<b4>:
+    name: "b4"
+    Button:
+        on_release: app.root.current = "b5"
+        text: "Charlotte's Web"
+        font_size: 40
+<b5>:
+    name: "b5"
+    Button:
+        on_release: app.root.current = "b6"
+        Image:
+            source: "img/b5.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<b6>:
+    name: "b6"
+    Button:
+        on_release: app.root.current = "b7"
+        text: "Historia del Tiempo y de los agujeros negros"
+        font_size: 30
+<b7>:
+    name: "b7"
+    Button:
+        on_release: app.root.current = "b8"
+        Image:
+            source: "img/b7.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<b8>:
+    name: "b8"
+    Button:
+        on_release: app.root.current = "main"
+        text: "La Isla del tesoro"
+        font_size: 50
+<c1>:
+    name: "c1"
+    Button:
+        on_release: app.root.current = "c2"
+        Image:
+            source: "img/c.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<c2>:
+    name: "c2"
+    Button:
+        on_release: app.root.current = "c3"
+        text: "Red Hot Chili Peppers"
+        font_size: 50
+<c3>:
+    name: "c3"
+    Button:
+        on_release: app.root.current = "c4"
+        Image:
+            source: "img/c3.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<c4>:
+    name: "c4"
+    Button:
+        on_release: app.root.current = "c5"
+        text: "The Beatles"
+        font_size: 50
+<c5>:
+    name: "c5"
+    Button:
+        on_release: app.root.current = "c6"
+        Image:
+            source: "img/c5.jpeg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<c6>:
+    name: "c6"
+    Button:
+        on_release: app.root.current = "c7"
+        text: "Coldplay"
+        font_size: 50
+<c7>:
+    name: "c7"
+    Button:
+        on_release: app.root.current = "c8"
+        Image:
+            source: "img/c7.png"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            size: 250, 250
+<c8>:
+    name: "c8"
+    Button:
+        on_release: app.root.current = "main"
+        text: "KISS"
+        font_size: 50
+
+
+
+
+
+
+
+
+
+
+
