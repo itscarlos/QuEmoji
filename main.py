@@ -68,11 +68,11 @@ class ScreenManagement(ScreenManager):
 
 presentation = Builder.load_file("app.kv")
 #Builder.load_string(""".""")
-class celia(App):
+class cacafuti(App):
 
 	def build(self):
 		return presentation
 
 
 if __name__ == '__main__':
-    celia().run()
+    cacafuti().run()
